@@ -3,7 +3,7 @@ configurer l'adresse ip
  # 
 # Script Windows PowerShell pour le déploiement d’AD DS
 #
-
+```powershell
 Import-Module ADDSDeployment
 Install-ADDSForest `
 -CreateDnsDelegation:$false `
@@ -17,3 +17,4 @@ Install-ADDSForest `
 -NoRebootOnCompletion:$false `
 -SysvolPath "C:\Windows\SYSVOL" `
 -Force:$true
+```
